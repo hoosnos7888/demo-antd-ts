@@ -57,8 +57,10 @@ yarn add antd
 
 ## 👍🏻 Tips
 
-### 언어설정
+[언어설정]
 - [Ant Design Internationalization](https://3x.ant.design/docs/react/i18n)
+
+[component 미리보기]
 - [Components Overview](https://ant.design/components/overview)
 
 
