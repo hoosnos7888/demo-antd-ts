@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# Ant Design
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="https://ant.design">
+    <img width="200" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg">
+  </a>
+</p>
 
-## Available Scripts
+-------
 
-In the project directory, you can run:
+## 🐜 Ant Design ?
 
-### `npm start`
+Ant Design은 알리바바 그룹에서 개발한 UI 프레임워크
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Button, Grid, Layout, Form 다양한 컴포넌트를 지원하고 있다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## 📦 Install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. react 설치
 
-### `npm run build`
+```bash
+npm install -g create-react-app
+create-react-app [proect-name]
+```
+```bash
+npx create-react-app [project-name]
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. typescript 설치 (선택)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+새로운 프로젝트 생성
+```bash
+npx create-react-app [proect-name] --template typescript
+```
+```bash
+yarn create react-app [proect-name] --template typescript
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+기존 프로젝트에 typescript 추가
+```bash
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
+```bash
+yarn add typescript @types/node @types/react @types/react-dom @types/jest
+```
 
-### `npm run eject`
+- 그 외에 필요에 따라 tsconfig.json 설정 내용 확인 등 환경설정 파일 변경하기
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 3. ant design 설치
+```bash
+npm install antd
+```
+```bash
+yarn add antd
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 👍🏻 Tips
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 언어설정
+- [Ant Design Internationalization](https://3x.ant.design/docs/react/i18n)
+- [Components Overview](https://ant.design/components/overview)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## 🔗 Links
+- [Home page](https://ant.design/)
+- [Mobile UI](http://mobile.ant.design)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🗂 REF.
+- [ant-design Github](https://github.com/ant-design/ant-design)
