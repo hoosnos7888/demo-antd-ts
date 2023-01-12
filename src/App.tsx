@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Component } from 'react';
 import {
   DesktopOutlined,
   FileOutlined,
@@ -7,13 +7,20 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import { Rate } from 'antd';
 import { Avatar } from 'antd';
 import { ConfigProvider } from 'antd';
 import { InstagramOutlined } from "@ant-design/icons";
-import { Row, Col } from 'antd';
+import { Col, Divider, Row } from 'antd';
 import { Checkbox } from 'antd';
+
 import type { CheckboxChangeEvent } from 'antd/es/checkbox';
 import koKR from 'antd/es/locale/ko_KR';
 
@@ -105,11 +112,42 @@ const App: React.FC = () => {
             </form>
           </div>
         </Content>
+        <Row style={{padding: 10}}>
+          <Col style={{background: 'rgba(255, 0, 0, 0.5)'}} span={12}>
+            <div style={{ margin: 10}}>
+              <p>관리자 평가</p>
+              <span>
+              <Avatar size="large" icon={<UserOutlined />} />
+              </span>
+              <span style={{padding: 5}}>김유택 평가 결과</span>
+              <span>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
+              </span>
+            </div>
+          </Col>
+          <Col style={{background: 'rgba(255, 100, 0, 0.5)'}} span={12}>
+            <div style={{ margin: 10}}>
+              <p>동료 평가</p>
+              <span>
+              <Avatar size="large" icon={<UserOutlined />} />
+              </span>
+              <span style={{padding: 5}}>이승연 평가 결과</span>
+              <span>
+                <Rate tooltips={desc} onChange={setValue} value={value} />
+                {value ? <span className="ant-rate-text">{desc[value - 1]}</span> : ''}
+              </span>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col flex="100px">100px</Col>
+          <Col style={{background: 'rgba(255, 0, 0, 0.5)'}} flex="auto">Fill Rest</Col>
+        </Row>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
     </Layout>
   );
-
 };
 
 export default App;
